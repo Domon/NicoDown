@@ -8,7 +8,7 @@ console.log("NicoDown loaded.");
 var nico = "http://www.nicovideo.jp";
 var video_id = "nm5074235";
 var xhr = new XMLHttpRequest();
-xmlhttp.onreadystatechange=function(){
+xhr.onreadystatechange=function(){
 	console.log("readystate: " + xhr.readyState);
 	if (xhr.readyState == 4) {
 		console.log("responseText: " + xhr.responseText);
