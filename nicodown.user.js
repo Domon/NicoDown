@@ -14,5 +14,5 @@ xmlhttp.onreadystatechange=function(){
 		console.log("responseText: " + xhr.responseText);
 	}
 }
-xmlhttp.open("GET", nico + "/api/getflv/" + video_id, true);
-xmlhttp.send(null);
+xhr.open("GET", nico + "/api/getflv/" + video_id, true);
+xhr.send(null);
