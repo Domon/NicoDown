@@ -16,7 +16,7 @@ xhr.onreadystatechange=function(){
 		var response = xhr.responseText;
 		var start = response.indexOf("&url=") + 5;
 		var stop = response.indexOf("&", start);
-		download_url = urldecode( response.substring(start, stop) );
+		download_url = decode( response.substring(start, stop) );
 		console.log("download_url = " + download_url);
 	}
 }
