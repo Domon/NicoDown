@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name NicoDown
-// @description A simple user script which provides niconico video URLs
-// @author Domon
+// @description A simple user script which provides the links to download niconico videos
+// @author Chun-wei Kuo, a.k.a. "Domon"
 // @match http://www.nicovideo.jp/watch/*
 // ==/UserScript==
 console.log("NicoDown loaded.");
