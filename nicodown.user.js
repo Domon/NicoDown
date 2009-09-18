@@ -5,3 +5,4 @@
 // @match	http://www.nicovideo.jp/watch*
 // ==/UserScript==
 console.log("NicoDown loaded.");
+console.log("added for debug");
