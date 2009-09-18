@@ -5,4 +5,14 @@
 // @match http://www.nicovideo.jp/watch/*
 // ==/UserScript==
 console.log("NicoDown loaded.");
-var xhr = new XMLHttpRequest()
+var nico = "http://www.nicovideo.jp";
+var video_id = "nm5074235";
+var xhr = new XMLHttpRequest();
+xmlhttp.onreadystatechange=function(){
+	console.log("readystate: " + xhr.readyState);
+	if (xhr.readyState == 4) {
+		console.log("responseText: " + xhr.responseText);
+	}
+}
+xmlhttp.open("GET", nico + "/api/getflv/" + video_id, true);
+xmlhttp.send(null);
