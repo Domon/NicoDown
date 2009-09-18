@@ -17,7 +17,7 @@ xhr.onreadystatechange=function(){
 		var start = response.indexOf("&url=") + 5;
 		var stop = response.indexOf("&", start);
 		download_url = response.substring( start, stop );
-		console.log("download_url = " + download_url;
+		console.log("download_url = " + download_url);
 	}
 }
 xhr.open("GET", nico + "/api/getflv/" + video_id, true);
