@@ -6,7 +6,7 @@
 // ==/UserScript==
 console.log("NicoDown loaded.");
 var nico = "http://www.nicovideo.jp";
-var video_id = document.location.href.substring(33);
+var video_id = document.location.href.substring(30);
 var download_url = "";
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange=function(){
