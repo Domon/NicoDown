@@ -18,7 +18,7 @@ xhr.onreadystatechange=function(){
 		var stop = response.indexOf("&", start);
 		download_url = unescape( response.substring(start, stop) );
 		console.log("download_url = " + download_url);
-		document.getElementsByTagName("h1")[0].innerHTML += "<a href=\"" + download_url + "\">DL</a>";
+		document.getElementsByTagName("h1")[0].innerHTML += "<a href=\"" + download_url + "\"><img src=\"http://domr.nsysu.edu.tw/~domon/img/download.png\" /></a>";
 	}
 }
 xhr.open("GET", nico + "/api/getflv/" + video_id, true);
